@@ -16,8 +16,8 @@ jobs:
             . venv/Scripts/activate
             pip install -r requirements.txt
       - run:
-        name: run tests
-        command: |
-        . venv/Scripts/activate
-        flake8 --exclude=venv* --statistics
-        pytest -v --cov=calculator
+          name: run tests
+          command: |
+          . venv/Scripts/activate
+          flake8 --exclude=venv* --statistics
+          pytest -v --cov=calculator
